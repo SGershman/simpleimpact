@@ -10,9 +10,10 @@ GO
 
 ALTER PROCEDURE uspLoadMetricComponents
 	  @tablename varchar(MAX)
+	, @tableschema varchar(MAX) = ''
 	, @metric_component_type nvarchar(MAX) = NULL
 	, @metric_component_value int = NULL
-	, @metric_component_source nvarchar(MAX) = NULL
+	, @metric_component_source nvarchar(MAX) = ''
 	, @metric_component_set nvarchar(MAX) = NULL
 
 AS
@@ -43,12 +44,14 @@ while @@FETCH_STATUS=0
 begin
 
 SET @finalsql = (
-	  ' INSERT INTO metric_component ([metric_component_name])'
-	+ ' SELECT DISTINCT ''' + @metric_component + ''' FROM dbo.' + @tablename
+	  ' INSERT INTO metric_component ([metric_component_name], [metric_component_source])'
+	+ ' SELECT DISTINCT ''' + @metric_component + ''', ''' + @tablename + ''' FROM ' + @tableschema + '.' + @tablename
+	+ ' EXCEPT (SELECT metric_component_name, metric_component_source FROM metric_component)'
 	)
 
 /*
-EXEC uspLoadMetricComponents @tablename = 'results', @metric_component_type = '1 - 5 Scale'
+EXEC uspLoadMetricComponents @tablename = 'org_health_assessment'
+, @tableschema = 'results', @metric_component_type = '1 - 5 Scale'
 */
 PRINT (@finalsql)	
 EXEC (@finalsql)
