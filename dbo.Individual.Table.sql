@@ -1,12 +1,15 @@
-﻿USE [V3_Test_Strategic_Plan]
+USE [V3_Test_Strategic_Plan]
 GO
-/****** Object:  Table [dbo].[Individual]    Script Date: 6/24/2015 9:13:16 AM ******/
+
+/****** Object:  Table [dbo].[Individual]    Script Date: 6/26/2015 12:20:12 PM ******/
 SET ANSI_NULLS ON
 GO
+
 SET QUOTED_IDENTIFIER ON
 GO
+
 CREATE TABLE [dbo].[Individual](
-	[Org_ID] int IDENTITY(1,1) NULL,
+	[Org_ID] [int] NULL,
 	[Org_Chapter_ID] [int] NULL,
 	[Individual_ID] [float] NULL,
 	[First_Name] [nvarchar](255) NULL,
@@ -23,9 +26,11 @@ CREATE TABLE [dbo].[Individual](
 	[Education_Level] [nvarchar](250) NULL,
 	[Income] [nvarchar](250) NULL,
 	[Industry] [nvarchar](250) NULL,
-	[Create_Timestamp] [datetime] NULL,
+	[Created_Timestamp] [datetime] NULL,
 	[Entry_Timestamp] [datetime] NULL,
-	[Update_Timestamp] [datetime] NULL
+	[Updated_Timestamp] [datetime] NULL
 ) ON [PRIMARY]
 
 GO
+
+
