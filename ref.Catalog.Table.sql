@@ -1,5 +1,6 @@
 CREATE TABLE [ref].[Catalog](
-	[Catalog_ID] [nvarchar](max) NOT NULL,
+	[Catalog_ID] [int] IDENTITY(1,1),
+	[Catalog_Name] [nvarchar](max) NOT NULL,
 	[Indicator_ID] [int] NULL,
 	[Indicator_Name] [nvarchar](max) NULL,
 	[Metric_ID] [int] NULL,

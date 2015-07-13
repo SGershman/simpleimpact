@@ -6,11 +6,11 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [ref].[Metrics_APQC](
-	[Process Element ID] [float] NULL,
+	[Process Element ID] [int] NULL,
 	[Hierarchy ID] [nvarchar](255) NULL,
 	[Process element] [nvarchar](255) NULL,
 	[Metric Category] [nvarchar](255) NULL,
-	[Metric ID] [float] NULL,
+	[Metric ID] [int] NULL,
 	[Metric name] [nvarchar](255) NULL,
 	[Formula] [nvarchar](255) NULL,
 	[Units] [nvarchar](255) NULL

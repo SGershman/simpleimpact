@@ -6,7 +6,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [ref].[Metrics_IRIS](
-	[ID] [nvarchar](255) NULL,
+	[ID] [nvarchar](255) NOT NULL,
 	[Section] [nvarchar](255) NULL,
 	[Subsection] [nvarchar](255) NULL,
 	[Sector] [nvarchar](255) NULL,

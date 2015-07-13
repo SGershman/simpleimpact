@@ -9,7 +9,7 @@ SET ANSI_PADDING ON
 GO
 
 CREATE TABLE [ref].[Metrics_McKinsey](
-	[ID] [varchar](max) NULL,
+	[ID] [varchar](max) NOT NULL,
 	[Section] [nvarchar](255) NULL,
 	[Subsection] [nvarchar](255) NULL,
 	[Metric Short Name] [nvarchar](255) NULL,
