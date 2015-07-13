@@ -1,4 +1,4 @@
-CREATE TABLE [dbo].[Survey](
+CREATE TABLE [ref].[Survey](
 	[Survey_ID] [int] IDENTITY(1,1),
 	[Survey_Name] [nvarchar](255) NULL,
 	[Survey_Description] [nvarchar](255) NULL,
