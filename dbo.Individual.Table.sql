@@ -1,13 +1,3 @@
-USE [V3_Test_Strategic_Plan]
-GO
-
-/****** Object:  Table [dbo].[Individual]    Script Date: 6/26/2015 12:32:31 PM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
 CREATE TABLE [dbo].[Individual](
 	[Org_ID] [int] NULL,
 	[Org_Chapter_ID] [int] NULL,
