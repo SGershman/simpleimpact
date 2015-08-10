@@ -3,7 +3,8 @@
 	[Metric_Type] [nvarchar](255) NULL,
 	[Metric_Name] [nvarchar](255) NULL,
 	[Metric_Value] [float] NULL,
-	[Metric_Source] [nvarchar](255) NULL
+	[Metric_Source] [nvarchar](255) NULL,
+	[Updated_Timestamp] [datetime] NOT NULL
 ) ON [PRIMARY]
 
 GO

@@ -1,13 +1,8 @@
-USE [V3_Test_Strategic_Plan]
-GO
-
-/****** Object:  StoredProcedure [dbo].[uspLoadMetricResults_Individual]    Script Date: 6/26/2015 1:01:13 PM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
-
 -- =============================================
 -- Author:		<Stephen Gershman>
 -- Create date: <06/26/2015>
@@ -16,7 +11,7 @@ GO
 /* EXEC uspLoadMetricResults_Individual				*/
 -- =============================================
 
-ALTER PROCEDURE [dbo].[uspLoadMetricResults_Individual]
+CREATE PROCEDURE [dbo].[uspLoadMetricResults_Individual]
 AS
 BEGIN
 

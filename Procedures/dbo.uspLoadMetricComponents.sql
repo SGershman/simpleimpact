@@ -8,7 +8,7 @@ GO
 -- Description:	<Load New Metric Components>
 -- =============================================
 
-ALTER PROCEDURE uspLoadMetricComponents
+CREATE PROCEDURE uspLoadMetricComponents
 	  @tablename varchar(MAX)
 	, @tableschema varchar(MAX) = ''
 	, @metric_component_type nvarchar(MAX) = NULL

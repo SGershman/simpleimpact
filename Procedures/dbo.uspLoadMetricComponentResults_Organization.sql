@@ -10,7 +10,7 @@ GO
 /* EXEC uspLoadMetricComponentsResults_Organization				*/
 -- =============================================
 
-ALTER PROCEDURE uspLoadMetricComponentsResults_Organization
+CREATE PROCEDURE uspLoadMetricComponentsResults_Organization
 AS
 BEGIN
 

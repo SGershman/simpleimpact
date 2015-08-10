@@ -1,7 +1,3 @@
-USE [V3_Test_Strategic_Plan]
-GO
-
-/****** Object:  StoredProcedure [dbo].[uspLoadMetricResults_Organization]    Script Date: 6/26/2015 1:01:13 PM ******/
 SET ANSI_NULLS ON
 GO
 
