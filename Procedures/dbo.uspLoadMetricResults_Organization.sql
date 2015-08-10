@@ -12,7 +12,7 @@ GO
 /* EXEC uspLoadMetricResults_Organization				*/
 -- =============================================
 
-CREATE PROCEDURE [dbo].[uspLoadMetricResults_Individual]
+CREATE PROCEDURE [dbo].[uspLoadMetricResults_Organization]
 AS
 BEGIN
 
