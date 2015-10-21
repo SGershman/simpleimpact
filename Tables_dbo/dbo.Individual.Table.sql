@@ -16,6 +16,7 @@ CREATE TABLE [dbo].[Individual](
 	[Education_Level] [nvarchar](250) NULL,
 	[Income] [nvarchar](250) NULL,
 	[Industry] [nvarchar](250) NULL,
+	[Financial Position] [nvarchar](250) NULL,
 	[Created_Timestamp] [datetime] NULL,
 	[Entry_Timestamp] [datetime] NULL,
 	[Updated_Timestamp] [datetime] NULL
